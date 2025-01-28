@@ -78,7 +78,64 @@ function UserContext({ children }) {
       setTimeout(() => {
         setSpeaking(false)
       }, 5000)
-    } else if (command.includes("time")) {
+    } else if (command.includes("open") && command.includes("linkedin")) {
+      window.open("https://www.linkedin.com", "_blank")
+      speak("opening linkedin")
+      setResponse(true)
+      setPrompt("opening linkedin...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("github")) {
+      window.open("https://www.github.com", "_blank")
+      speak("opening github")
+      setResponse(true)
+      setPrompt("opening github...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("facebook")) {
+      window.open("https://www.facebook.com", "_blank")
+      speak("opening facebook")
+      setResponse(true)
+      setPrompt("opening facebook...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("twitter")) {
+      window.open("https://x.com/?lang=en", "_blank")
+      speak("opening twitter")
+      setResponse(true)
+      setPrompt("opening twitter...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("gmail")) {
+      window.open("https://www.gmail.com", "_blank")
+      speak("opening gmail")
+      setResponse(true)
+      setPrompt("opening gmail...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("microsoft")) {
+      window.open("https://www.microsoft.com", "_blank")
+      speak("opening microsoft")
+      setResponse(true)
+      setPrompt("opening microsoft...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    } else if (command.includes("open") && command.includes("netflix")) {
+      window.open("https://www.netflix.com", "_blank")
+      speak("opening netflix")
+      setResponse(true)
+      setPrompt("opening netflix...")
+      setTimeout(() => {
+        setSpeaking(false)
+      }, 5000)
+    }
+    else if (command.includes("time")) {
       let time = new Date().toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric" })
       speak(time)
       setResponse(true)

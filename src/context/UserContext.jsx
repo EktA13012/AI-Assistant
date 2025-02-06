@@ -39,7 +39,11 @@ function UserContext({ children }) {
     setResponse(true)
     setTimeout(() => {
       setSpeaking(false)
+<<<<<<< HEAD
     }, 15000)
+=======
+    }, 13000)
+>>>>>>> 5ed06205ca1ef71f8d77845e0edd3711ed695446
 
   }
   let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -134,7 +138,11 @@ function UserContext({ children }) {
       setTimeout(() => {
         setSpeaking(false)
       }, 5000)
+<<<<<<< HEAD
     } 
+=======
+    }
+>>>>>>> 5ed06205ca1ef71f8d77845e0edd3711ed695446
     else if (command.includes("time")) {
       let time = new Date().toLocaleTimeString(undefined, { hour: "numeric", minute: "numeric" })
       speak(time)

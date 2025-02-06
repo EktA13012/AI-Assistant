@@ -39,7 +39,7 @@ function UserContext({ children }) {
     setResponse(true)
     setTimeout(() => {
       setSpeaking(false)
-    }, 5000)
+    }, 13000)
 
   }
   let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
